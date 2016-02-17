@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DB" targetNamespace="http://tempuri.org/DB.xsd" xmlns:mstns="http://tempuri.org/DB.xsd" xmlns="http://tempuri.org/DB.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DB" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DB" msprop:Generator_UserDSName="DB">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Sites" msprop:Generator_TableClassName="SitesDataTable" msprop:Generator_TableVarName="tableSites" msprop:Generator_TablePropName="Sites" msprop:Generator_RowDeletingName="SitesRowDeleting" msprop:Generator_RowChangingName="SitesRowChanging" msprop:Generator_RowEvHandlerName="SitesRowChangeEventHandler" msprop:Generator_RowDeletedName="SitesRowDeleted" msprop:Generator_UserTableName="Sites" msprop:Generator_RowChangedName="SitesRowChanged" msprop:Generator_RowEvArgName="SitesRowChangeEvent" msprop:Generator_RowClassName="SitesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SiteID" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnSiteID" msprop:Generator_ColumnPropNameInRow="SiteID" msprop:Generator_ColumnPropNameInTable="SiteIDColumn" msprop:Generator_UserColumnName="SiteID" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="baseURL" msdata:Caption="Base URL" msprop:Generator_ColumnVarNameInTable="columnbaseURL" msprop:Generator_ColumnPropNameInRow="baseURL" msprop:Generator_ColumnPropNameInTable="baseURLColumn" msprop:Generator_UserColumnName="baseURL" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="Description" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="HasPages" msdata:Caption="Has Subpages" msprop:Generator_ColumnVarNameInTable="columnHasPages" msprop:Generator_ColumnPropNameInRow="HasPages" msprop:Generator_ColumnPropNameInTable="HasPagesColumn" msprop:Generator_UserColumnName="HasPages" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="FirstSeparator" msprop:Generator_ColumnVarNameInTable="columnFirstSeparator" msprop:Generator_ColumnPropNameInRow="FirstSeparator" msprop:Generator_ColumnPropNameInTable="FirstSeparatorColumn" msprop:Generator_UserColumnName="FirstSeparator" type="xs:string" minOccurs="0" />
+              <xs:element name="ParamSeparator" msprop:Generator_ColumnVarNameInTable="columnParamSeparator" msprop:Generator_ColumnPropNameInRow="ParamSeparator" msprop:Generator_ColumnPropNameInTable="ParamSeparatorColumn" msprop:Generator_UserColumnName="ParamSeparator" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Parameters" msprop:Generator_TableClassName="ParametersDataTable" msprop:Generator_TableVarName="tableParameters" msprop:Generator_TablePropName="Parameters" msprop:Generator_RowDeletingName="ParametersRowDeleting" msprop:Generator_RowChangingName="ParametersRowChanging" msprop:Generator_RowEvHandlerName="ParametersRowChangeEventHandler" msprop:Generator_RowDeletedName="ParametersRowDeleted" msprop:Generator_UserTableName="Parameters" msprop:Generator_RowChangedName="ParametersRowChanged" msprop:Generator_RowEvArgName="ParametersRowChangeEvent" msprop:Generator_RowClassName="ParametersRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ParamID" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnParamID" msprop:Generator_ColumnPropNameInRow="ParamID" msprop:Generator_ColumnPropNameInTable="ParamIDColumn" msprop:Generator_UserColumnName="ParamID" type="xs:int" />
+              <xs:element name="SiteID" msdata:Caption="Site ID" msprop:Generator_ColumnVarNameInTable="columnSiteID" msprop:Generator_ColumnPropNameInRow="SiteID" msprop:Generator_ColumnPropNameInTable="SiteIDColumn" msprop:Generator_UserColumnName="SiteID" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="ParamTypeID" msdata:Caption="Param Type" msprop:Generator_ColumnVarNameInTable="columnParamTypeID" msprop:Generator_ColumnPropNameInRow="ParamTypeID" msprop:Generator_ColumnPropNameInTable="ParamTypeIDColumn" msprop:Generator_UserColumnName="ParamTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="FormatString" msprop:Generator_ColumnVarNameInTable="columnFormatString" msprop:Generator_ColumnPropNameInRow="FormatString" msprop:Generator_ColumnPropNameInTable="FormatStringColumn" msprop:Generator_UserColumnName="FormatString" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ParamType" msprop:Generator_TableClassName="ParamTypeDataTable" msprop:Generator_TableVarName="tableParamType" msprop:Generator_TablePropName="ParamType" msprop:Generator_RowDeletingName="ParamTypeRowDeleting" msprop:Generator_RowChangingName="ParamTypeRowChanging" msprop:Generator_RowEvHandlerName="ParamTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="ParamTypeRowDeleted" msprop:Generator_UserTableName="ParamType" msprop:Generator_RowChangedName="ParamTypeRowChanged" msprop:Generator_RowEvArgName="ParamTypeRowChangeEvent" msprop:Generator_RowClassName="ParamTypeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ParamTypeID" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnParamTypeID" msprop:Generator_ColumnPropNameInRow="ParamTypeID" msprop:Generator_ColumnPropNameInTable="ParamTypeIDColumn" msprop:Generator_UserColumnName="ParamTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ResultFields" msprop:Generator_TableClassName="ResultFieldsDataTable" msprop:Generator_TableVarName="tableResultFields" msprop:Generator_TablePropName="ResultFields" msprop:Generator_RowDeletingName="ResultFieldsRowDeleting" msprop:Generator_RowChangingName="ResultFieldsRowChanging" msprop:Generator_RowEvHandlerName="ResultFieldsRowChangeEventHandler" msprop:Generator_RowDeletedName="ResultFieldsRowDeleted" msprop:Generator_UserTableName="ResultFields" msprop:Generator_RowChangedName="ResultFieldsRowChanged" msprop:Generator_RowEvArgName="ResultFieldsRowChangeEvent" msprop:Generator_RowClassName="ResultFieldsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ResultFieldID" msdata:AutoIncrement="true" msdata:Caption="" msprop:Generator_ColumnVarNameInTable="columnResultFieldID" msprop:Generator_ColumnPropNameInRow="ResultFieldID" msprop:Generator_ColumnPropNameInTable="ResultFieldIDColumn" msprop:Generator_UserColumnName="ResultFieldID" type="xs:int" />
+              <xs:element name="RFG_ID" msdata:Caption="ID" msprop:Generator_ColumnVarNameInTable="columnRFG_ID" msprop:Generator_ColumnPropNameInRow="RFG_ID" msprop:Generator_ColumnPropNameInTable="RFG_IDColumn" msprop:Generator_UserColumnName="RFG_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="RFT_ID" msprop:Generator_ColumnVarNameInTable="columnRFT_ID" msprop:Generator_ColumnPropNameInRow="RFT_ID" msprop:Generator_ColumnPropNameInTable="RFT_IDColumn" msprop:Generator_UserColumnName="RFT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="Attribute" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Attribute" msprop:Generator_ColumnVarNameInTable="columnAttribute" msprop:Generator_ColumnPropNameInTable="AttributeColumn" msprop:Generator_UserColumnName="Attribute" type="xs:string" minOccurs="0" />
+              <xs:element name="Value" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_ColumnVarNameInTable="columnValue" msprop:Generator_ColumnPropNameInTable="ValueColumn" msprop:Generator_UserColumnName="Value" type="xs:string" minOccurs="0" />
+              <xs:element name="ExactMatch" msdata:Caption="Exact Match" msprop:nullValue="false" msprop:Generator_ColumnPropNameInRow="ExactMatch" msprop:Generator_ColumnVarNameInTable="columnExactMatch" msprop:Generator_ColumnPropNameInTable="ExactMatchColumn" msprop:Generator_UserColumnName="ExactMatch" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="XPath" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="XPath" msprop:Generator_ColumnVarNameInTable="columnXPath" msprop:Generator_ColumnPropNameInTable="XPathColumn" msprop:Generator_UserColumnName="XPath" type="xs:string" minOccurs="0" />
+              <xs:element name="Property" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Property" msprop:Generator_ColumnVarNameInTable="columnProperty" msprop:Generator_ColumnPropNameInTable="PropertyColumn" msprop:Generator_UserColumnName="Property" type="xs:string" minOccurs="0" />
+              <xs:element name="SplitRegex" msdata:Caption="Split Regex" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="SplitRegex" msprop:Generator_ColumnVarNameInTable="columnSplitRegex" msprop:Generator_ColumnPropNameInTable="SplitRegexColumn" msprop:Generator_UserColumnName="SplitRegex" type="xs:string" minOccurs="0" />
+              <xs:element name="SplitIndex" msdata:Caption="Split Index" msprop:nullValue="-1" msprop:Generator_ColumnPropNameInRow="SplitIndex" msprop:Generator_ColumnVarNameInTable="columnSplitIndex" msprop:Generator_ColumnPropNameInTable="SplitIndexColumn" msprop:Generator_UserColumnName="SplitIndex" type="xs:int" default="-1" minOccurs="0" />
+              <xs:element name="FindRegex" msdata:Caption="Find Regex" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="FindRegex" msprop:Generator_ColumnVarNameInTable="columnFindRegex" msprop:Generator_ColumnPropNameInTable="FindRegexColumn" msprop:Generator_UserColumnName="FindRegex" type="xs:string" minOccurs="0" />
+              <xs:element name="ReplaceRegex" msdata:Caption="Replace Regex" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="ReplaceRegex" msprop:Generator_ColumnVarNameInTable="columnReplaceRegex" msprop:Generator_ColumnPropNameInTable="ReplaceRegexColumn" msprop:Generator_UserColumnName="ReplaceRegex" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Results" msprop:Generator_TableClassName="ResultsDataTable" msprop:Generator_TableVarName="tableResults" msprop:Generator_TablePropName="Results" msprop:Generator_RowDeletingName="ResultsRowDeleting" msprop:Generator_RowChangingName="ResultsRowChanging" msprop:Generator_RowEvHandlerName="ResultsRowChangeEventHandler" msprop:Generator_RowDeletedName="ResultsRowDeleted" msprop:Generator_UserTableName="Results" msprop:Generator_RowChangedName="ResultsRowChanged" msprop:Generator_RowEvArgName="ResultsRowChangeEvent" msprop:Generator_RowClassName="ResultsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ResultSetID" msprop:Generator_ColumnVarNameInTable="columnResultSetID" msprop:Generator_ColumnPropNameInRow="ResultSetID" msprop:Generator_ColumnPropNameInTable="ResultSetIDColumn" msprop:Generator_UserColumnName="ResultSetID" type="xs:int" />
+              <xs:element name="ResultFieldID" msprop:Generator_ColumnVarNameInTable="columnResultFieldID" msprop:Generator_ColumnPropNameInRow="ResultFieldID" msprop:Generator_ColumnPropNameInTable="ResultFieldIDColumn" msprop:Generator_UserColumnName="ResultFieldID" type="xs:int" />
+              <xs:element name="RowNumber" msprop:Generator_ColumnVarNameInTable="columnRowNumber" msprop:Generator_ColumnPropNameInRow="RowNumber" msprop:Generator_ColumnPropNameInTable="RowNumberColumn" msprop:Generator_UserColumnName="RowNumber" type="xs:int" />
+              <xs:element name="Value" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_ColumnVarNameInTable="columnValue" msprop:Generator_ColumnPropNameInTable="ValueColumn" msprop:Generator_UserColumnName="Value" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ResultFieldGroups" msprop:Generator_TableClassName="ResultFieldGroupsDataTable" msprop:Generator_TableVarName="tableResultFieldGroups" msprop:Generator_TablePropName="ResultFieldGroups" msprop:Generator_RowDeletingName="ResultFieldGroupsRowDeleting" msprop:Generator_RowChangingName="ResultFieldGroupsRowChanging" msprop:Generator_RowEvHandlerName="ResultFieldGroupsRowChangeEventHandler" msprop:Generator_RowDeletedName="ResultFieldGroupsRowDeleted" msprop:Generator_UserTableName="ResultFieldGroups" msprop:Generator_RowChangedName="ResultFieldGroupsRowChanged" msprop:Generator_RowEvArgName="ResultFieldGroupsRowChangeEvent" msprop:Generator_RowClassName="ResultFieldGroupsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RFG_ID" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnRFG_ID" msprop:Generator_ColumnPropNameInRow="RFG_ID" msprop:Generator_ColumnPropNameInTable="RFG_IDColumn" msprop:Generator_UserColumnName="RFG_ID" type="xs:int" />
+              <xs:element name="SiteID" msprop:Generator_ColumnVarNameInTable="columnSiteID" msprop:Generator_ColumnPropNameInRow="SiteID" msprop:Generator_ColumnPropNameInTable="SiteIDColumn" msprop:Generator_UserColumnName="SiteID" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="Attribute" msprop:Generator_ColumnVarNameInTable="columnAttribute" msprop:Generator_ColumnPropNameInRow="Attribute" msprop:Generator_ColumnPropNameInTable="AttributeColumn" msprop:Generator_UserColumnName="Attribute" type="xs:string" minOccurs="0" />
+              <xs:element name="Value" msprop:Generator_ColumnVarNameInTable="columnValue" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_ColumnPropNameInTable="ValueColumn" msprop:Generator_UserColumnName="Value" type="xs:string" minOccurs="0" />
+              <xs:element name="ExactMatch" msprop:nullValue="false" msprop:Generator_ColumnPropNameInRow="ExactMatch" msprop:Generator_ColumnVarNameInTable="columnExactMatch" msprop:Generator_ColumnPropNameInTable="ExactMatchColumn" msprop:Generator_UserColumnName="ExactMatch" type="xs:boolean" default="false" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Searches" msprop:Generator_TableClassName="SearchesDataTable" msprop:Generator_TableVarName="tableSearches" msprop:Generator_TablePropName="Searches" msprop:Generator_RowDeletingName="SearchesRowDeleting" msprop:Generator_RowChangingName="SearchesRowChanging" msprop:Generator_RowEvHandlerName="SearchesRowChangeEventHandler" msprop:Generator_RowDeletedName="SearchesRowDeleted" msprop:Generator_UserTableName="Searches" msprop:Generator_RowChangedName="SearchesRowChanged" msprop:Generator_RowEvArgName="SearchesRowChangeEvent" msprop:Generator_RowClassName="SearchesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SearchID" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnSearchID" msprop:Generator_ColumnPropNameInRow="SearchID" msprop:Generator_ColumnPropNameInTable="SearchIDColumn" msprop:Generator_UserColumnName="SearchID" type="xs:int" />
+              <xs:element name="SiteID" msprop:Generator_ColumnVarNameInTable="columnSiteID" msprop:Generator_ColumnPropNameInRow="SiteID" msprop:Generator_ColumnPropNameInTable="SiteIDColumn" msprop:Generator_UserColumnName="SiteID" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="SaveHTMLtoFile" msprop:Generator_ColumnVarNameInTable="columnSaveHTMLtoFile" msprop:Generator_ColumnPropNameInRow="SaveHTMLtoFile" msprop:Generator_ColumnPropNameInTable="SaveHTMLtoFileColumn" msprop:Generator_UserColumnName="SaveHTMLtoFile" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SearchParams" msprop:Generator_TableClassName="SearchParamsDataTable" msprop:Generator_TableVarName="tableSearchParams" msprop:Generator_TablePropName="SearchParams" msprop:Generator_RowDeletingName="SearchParamsRowDeleting" msprop:Generator_RowChangingName="SearchParamsRowChanging" msprop:Generator_RowEvHandlerName="SearchParamsRowChangeEventHandler" msprop:Generator_RowDeletedName="SearchParamsRowDeleted" msprop:Generator_UserTableName="SearchParams" msprop:Generator_RowChangedName="SearchParamsRowChanged" msprop:Generator_RowEvArgName="SearchParamsRowChangeEvent" msprop:Generator_RowClassName="SearchParamsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SearchID" msprop:Generator_ColumnVarNameInTable="columnSearchID" msprop:Generator_ColumnPropNameInRow="SearchID" msprop:Generator_ColumnPropNameInTable="SearchIDColumn" msprop:Generator_UserColumnName="SearchID" type="xs:int" />
+              <xs:element name="ParamID" msprop:Generator_ColumnVarNameInTable="columnParamID" msprop:Generator_ColumnPropNameInRow="ParamID" msprop:Generator_ColumnPropNameInTable="ParamIDColumn" msprop:Generator_UserColumnName="ParamID" type="xs:int" />
+              <xs:element name="Value" msprop:Generator_ColumnVarNameInTable="columnValue" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_ColumnPropNameInTable="ValueColumn" msprop:Generator_UserColumnName="Value" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SitePagesDetails" msprop:Generator_TableClassName="SitePagesDetailsDataTable" msprop:Generator_TableVarName="tableSitePagesDetails" msprop:Generator_TablePropName="SitePagesDetails" msprop:Generator_RowDeletingName="SitePagesDetailsRowDeleting" msprop:Generator_RowChangingName="SitePagesDetailsRowChanging" msprop:Generator_RowEvHandlerName="SitePagesDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="SitePagesDetailsRowDeleted" msprop:Generator_UserTableName="SitePagesDetails" msprop:Generator_RowChangedName="SitePagesDetailsRowChanged" msprop:Generator_RowEvArgName="SitePagesDetailsRowChangeEvent" msprop:Generator_RowClassName="SitePagesDetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SiteID" msprop:Generator_ColumnVarNameInTable="columnSiteID" msprop:Generator_ColumnPropNameInRow="SiteID" msprop:Generator_ColumnPropNameInTable="SiteIDColumn" msprop:Generator_UserColumnName="SiteID" type="xs:int" />
+              <xs:element name="PagingTypeID" msprop:Generator_ColumnVarNameInTable="columnPagingTypeID" msprop:Generator_ColumnPropNameInRow="PagingTypeID" msprop:Generator_ColumnPropNameInTable="PagingTypeIDColumn" msprop:Generator_UserColumnName="PagingTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="NextPageAttribute" msdata:Caption="Next Page Attribute" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="NextPageAttribute" msprop:Generator_ColumnVarNameInTable="columnNextPageAttribute" msprop:Generator_ColumnPropNameInTable="NextPageAttributeColumn" msprop:Generator_UserColumnName="NextPageAttribute" type="xs:string" minOccurs="0" />
+              <xs:element name="NextPageValue" msdata:Caption="Next Page Value" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="NextPageValue" msprop:Generator_ColumnVarNameInTable="columnNextPageValue" msprop:Generator_ColumnPropNameInTable="NextPageValueColumn" msprop:Generator_UserColumnName="NextPageValue" type="xs:string" minOccurs="0" />
+              <xs:element name="NextPageExact" msdata:Caption="Exact Match" msprop:nullValue="false" msprop:Generator_ColumnPropNameInRow="NextPageExact" msprop:Generator_ColumnVarNameInTable="columnNextPageExact" msprop:Generator_ColumnPropNameInTable="NextPageExactColumn" msprop:Generator_UserColumnName="NextPageExact" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="NextPageProp" msdata:Caption="Next Page Property" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="NextPageProp" msprop:Generator_ColumnVarNameInTable="columnNextPageProp" msprop:Generator_ColumnPropNameInTable="NextPagePropColumn" msprop:Generator_UserColumnName="NextPageProp" type="xs:string" minOccurs="0" />
+              <xs:element name="MaxPagesAttribute" msdata:Caption="Max Pages Attribute" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="MaxPagesAttribute" msprop:Generator_ColumnVarNameInTable="columnMaxPagesAttribute" msprop:Generator_ColumnPropNameInTable="MaxPagesAttributeColumn" msprop:Generator_UserColumnName="MaxPagesAttribute" type="xs:string" minOccurs="0" />
+              <xs:element name="MaxPagesValue" msdata:Caption="Max Pages Value" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="MaxPagesValue" msprop:Generator_ColumnVarNameInTable="columnMaxPagesValue" msprop:Generator_ColumnPropNameInTable="MaxPagesValueColumn" msprop:Generator_UserColumnName="MaxPagesValue" type="xs:string" minOccurs="0" />
+              <xs:element name="MaxPagesExact" msdata:Caption="Exact Match" msprop:nullValue="false" msprop:Generator_ColumnPropNameInRow="MaxPagesExact" msprop:Generator_ColumnVarNameInTable="columnMaxPagesExact" msprop:Generator_ColumnPropNameInTable="MaxPagesExactColumn" msprop:Generator_UserColumnName="MaxPagesExact" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="MaxPagesProp" msdata:Caption="Max Pages Property" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="MaxPagesProp" msprop:Generator_ColumnVarNameInTable="columnMaxPagesProp" msprop:Generator_ColumnPropNameInTable="MaxPagesPropColumn" msprop:Generator_UserColumnName="MaxPagesProp" type="xs:string" minOccurs="0" />
+              <xs:element name="SplitRegex" msdata:Caption="Split Regex" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="SplitRegex" msprop:Generator_ColumnVarNameInTable="columnSplitRegex" msprop:Generator_ColumnPropNameInTable="SplitRegexColumn" msprop:Generator_UserColumnName="SplitRegex" type="xs:string" minOccurs="0" />
+              <xs:element name="SplitIndex" msdata:Caption="Split Index" msprop:nullValue="-1" msprop:Generator_ColumnPropNameInRow="SplitIndex" msprop:Generator_ColumnVarNameInTable="columnSplitIndex" msprop:Generator_ColumnPropNameInTable="SplitIndexColumn" msprop:Generator_UserColumnName="SplitIndex" type="xs:int" default="-1" minOccurs="0" />
+              <xs:element name="FindRegex" msdata:Caption="Find Regex" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="FindRegex" msprop:Generator_ColumnVarNameInTable="columnFindRegex" msprop:Generator_ColumnPropNameInTable="FindRegexColumn" msprop:Generator_UserColumnName="FindRegex" type="xs:string" minOccurs="0" />
+              <xs:element name="ReplaceRegex" msdata:Caption="Replace Regex" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="ReplaceRegex" msprop:Generator_ColumnVarNameInTable="columnReplaceRegex" msprop:Generator_ColumnPropNameInTable="ReplaceRegexColumn" msprop:Generator_UserColumnName="ReplaceRegex" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ResultFieldType" msprop:Generator_TableClassName="ResultFieldTypeDataTable" msprop:Generator_TableVarName="tableResultFieldType" msprop:Generator_TablePropName="ResultFieldType" msprop:Generator_RowDeletingName="ResultFieldTypeRowDeleting" msprop:Generator_RowChangingName="ResultFieldTypeRowChanging" msprop:Generator_RowEvHandlerName="ResultFieldTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="ResultFieldTypeRowDeleted" msprop:Generator_UserTableName="ResultFieldType" msprop:Generator_RowChangedName="ResultFieldTypeRowChanged" msprop:Generator_RowEvArgName="ResultFieldTypeRowChangeEvent" msprop:Generator_RowClassName="ResultFieldTypeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RFT_ID" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnRFT_ID" msprop:Generator_ColumnPropNameInRow="RFT_ID" msprop:Generator_ColumnPropNameInTable="RFT_IDColumn" msprop:Generator_UserColumnName="RFT_ID" type="xs:int" />
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ResultSets" msprop:Generator_TableClassName="ResultSetsDataTable" msprop:Generator_TableVarName="tableResultSets" msprop:Generator_TablePropName="ResultSets" msprop:Generator_RowDeletingName="ResultSetsRowDeleting" msprop:Generator_RowChangingName="ResultSetsRowChanging" msprop:Generator_RowEvHandlerName="ResultSetsRowChangeEventHandler" msprop:Generator_RowDeletedName="ResultSetsRowDeleted" msprop:Generator_UserTableName="ResultSets" msprop:Generator_RowChangedName="ResultSetsRowChanged" msprop:Generator_RowEvArgName="ResultSetsRowChangeEvent" msprop:Generator_RowClassName="ResultSetsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ResultSetID" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnResultSetID" msprop:Generator_ColumnPropNameInRow="ResultSetID" msprop:Generator_ColumnPropNameInTable="ResultSetIDColumn" msprop:Generator_UserColumnName="ResultSetID" type="xs:int" />
+              <xs:element name="SearchID" msprop:Generator_ColumnVarNameInTable="columnSearchID" msprop:Generator_ColumnPropNameInRow="SearchID" msprop:Generator_ColumnPropNameInTable="SearchIDColumn" msprop:Generator_UserColumnName="SearchID" type="xs:int" />
+              <xs:element name="StartTime" msprop:Generator_ColumnVarNameInTable="columnStartTime" msprop:Generator_ColumnPropNameInRow="StartTime" msprop:Generator_ColumnPropNameInTable="StartTimeColumn" msprop:Generator_UserColumnName="StartTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EndTime" msprop:Generator_ColumnVarNameInTable="columnEndTime" msprop:Generator_ColumnPropNameInRow="EndTime" msprop:Generator_ColumnPropNameInTable="EndTimeColumn" msprop:Generator_UserColumnName="EndTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Expiration" msprop:Generator_ColumnVarNameInTable="columnExpiration" msprop:Generator_ColumnPropNameInRow="Expiration" msprop:Generator_ColumnPropNameInTable="ExpirationColumn" msprop:Generator_UserColumnName="Expiration" type="xs:duration" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PagingType" msprop:Generator_TableClassName="PagingTypeDataTable" msprop:Generator_TableVarName="tablePagingType" msprop:Generator_TablePropName="PagingType" msprop:Generator_RowDeletingName="PagingTypeRowDeleting" msprop:Generator_RowChangingName="PagingTypeRowChanging" msprop:Generator_RowEvHandlerName="PagingTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="PagingTypeRowDeleted" msprop:Generator_UserTableName="PagingType" msprop:Generator_RowChangedName="PagingTypeRowChanged" msprop:Generator_RowEvArgName="PagingTypeRowChangeEvent" msprop:Generator_RowClassName="PagingTypeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PagingTypeID" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnPagingTypeID" msprop:Generator_ColumnPropNameInRow="PagingTypeID" msprop:Generator_ColumnPropNameInTable="PagingTypeIDColumn" msprop:Generator_UserColumnName="PagingTypeID" type="xs:int" />
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="SitesKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Sites" />
+      <xs:field xpath="mstns:SiteID" />
+    </xs:unique>
+    <xs:unique name="ParametersKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Parameters" />
+      <xs:field xpath="mstns:ParamID" />
+    </xs:unique>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:ParamType" />
+      <xs:field xpath="mstns:ParamTypeID" />
+    </xs:unique>
+    <xs:unique name="ResultFieldsKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ResultFields" />
+      <xs:field xpath="mstns:ResultFieldID" />
+    </xs:unique>
+    <xs:unique name="Results_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Results" />
+      <xs:field xpath="mstns:RowNumber" />
+      <xs:field xpath="mstns:ResultFieldID" />
+      <xs:field xpath="mstns:ResultSetID" />
+    </xs:unique>
+    <xs:unique name="ResultFieldGroups_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ResultFieldGroups" />
+      <xs:field xpath="mstns:RFG_ID" />
+    </xs:unique>
+    <xs:unique name="Searches_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Searches" />
+      <xs:field xpath="mstns:SearchID" />
+    </xs:unique>
+    <xs:unique name="SearchParams_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SearchParams" />
+      <xs:field xpath="mstns:ParamID" />
+      <xs:field xpath="mstns:SearchID" />
+    </xs:unique>
+    <xs:unique name="SitePagesDetails_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SitePagesDetails" />
+      <xs:field xpath="mstns:SiteID" />
+    </xs:unique>
+    <xs:unique name="ResultFieldType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ResultFieldType" />
+      <xs:field xpath="mstns:RFT_ID" />
+    </xs:unique>
+    <xs:unique name="ResultSets_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ResultSets" />
+      <xs:field xpath="mstns:ResultSetID" />
+    </xs:unique>
+    <xs:unique name="PagingType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PagingType" />
+      <xs:field xpath="mstns:PagingTypeID" />
+    </xs:unique>
+    <xs:keyref name="ResultSets_Results" refer="ResultSets_Constraint1" msprop:rel_Generator_UserChildTable="Results" msprop:rel_Generator_ChildPropName="GetResultsRows" msprop:rel_Generator_UserRelationName="ResultSets_Results" msprop:rel_Generator_RelationVarName="relationResultSets_Results" msprop:rel_Generator_UserParentTable="ResultSets" msprop:rel_Generator_ParentPropName="ResultSetsRow" msdata:UpdateRule="None">
+      <xs:selector xpath=".//mstns:Results" />
+      <xs:field xpath="mstns:ResultSetID" />
+    </xs:keyref>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="Sites_Parameters" msdata:parent="Sites" msdata:child="Parameters" msdata:parentkey="SiteID" msdata:childkey="SiteID" msprop:Generator_UserChildTable="Parameters" msprop:Generator_ChildPropName="GetParametersRows" msprop:Generator_UserRelationName="Sites_Parameters" msprop:Generator_ParentPropName="SitesRow" msprop:Generator_RelationVarName="relationSites_Parameters" msprop:Generator_UserParentTable="Sites" />
+      <msdata:Relationship name="ParamType_Parameters" msdata:parent="ParamType" msdata:child="Parameters" msdata:parentkey="ParamTypeID" msdata:childkey="ParamTypeID" msprop:Generator_UserChildTable="Parameters" msprop:Generator_ChildPropName="GetParametersRows" msprop:Generator_UserRelationName="ParamType_Parameters" msprop:Generator_ParentPropName="ParamTypeRow" msprop:Generator_RelationVarName="relationParamType_Parameters" msprop:Generator_UserParentTable="ParamType" />
+      <msdata:Relationship name="Sites_ResultFieldGroups" msdata:parent="Sites" msdata:child="ResultFieldGroups" msdata:parentkey="SiteID" msdata:childkey="SiteID" msprop:Generator_UserChildTable="ResultFieldGroups" msprop:Generator_ChildPropName="GetResultFieldGroupsRows" msprop:Generator_UserRelationName="Sites_ResultFieldGroups" msprop:Generator_ParentPropName="SitesRow" msprop:Generator_RelationVarName="relationSites_ResultFieldGroups" msprop:Generator_UserParentTable="Sites" />
+      <msdata:Relationship name="ResultFieldGroups_ResultFields" msdata:parent="ResultFieldGroups" msdata:child="ResultFields" msdata:parentkey="RFG_ID" msdata:childkey="RFG_ID" msprop:Generator_UserChildTable="ResultFields" msprop:Generator_ChildPropName="GetResultFieldsRows" msprop:Generator_UserRelationName="ResultFieldGroups_ResultFields" msprop:Generator_RelationVarName="relationResultFieldGroups_ResultFields" msprop:Generator_UserParentTable="ResultFieldGroups" msprop:Generator_ParentPropName="ResultFieldGroupsRow" />
+      <msdata:Relationship name="Sites_Searches" msdata:parent="Sites" msdata:child="Searches" msdata:parentkey="SiteID" msdata:childkey="SiteID" msprop:Generator_UserChildTable="Searches" msprop:Generator_ChildPropName="GetSearchesRows" msprop:Generator_UserRelationName="Sites_Searches" msprop:Generator_ParentPropName="SitesRow" msprop:Generator_RelationVarName="relationSites_Searches" msprop:Generator_UserParentTable="Sites" />
+      <msdata:Relationship name="Searches_SearchParams" msdata:parent="Searches" msdata:child="SearchParams" msdata:parentkey="SearchID" msdata:childkey="SearchID" msprop:Generator_UserChildTable="SearchParams" msprop:Generator_ChildPropName="GetSearchParamsRows" msprop:Generator_UserRelationName="Searches_SearchParams" msprop:Generator_ParentPropName="SearchesRow" msprop:Generator_RelationVarName="relationSearches_SearchParams" msprop:Generator_UserParentTable="Searches" />
+      <msdata:Relationship name="Parameters_SearchParams" msdata:parent="Parameters" msdata:child="SearchParams" msdata:parentkey="ParamID" msdata:childkey="ParamID" msprop:Generator_UserChildTable="SearchParams" msprop:Generator_ChildPropName="GetSearchParamsRows" msprop:Generator_UserRelationName="Parameters_SearchParams" msprop:Generator_ParentPropName="ParametersRow" msprop:Generator_RelationVarName="relationParameters_SearchParams" msprop:Generator_UserParentTable="Parameters" />
+      <msdata:Relationship name="Sites_SitePagesDetails" msdata:parent="Sites" msdata:child="SitePagesDetails" msdata:parentkey="SiteID" msdata:childkey="SiteID" msprop:Generator_UserChildTable="SitePagesDetails" msprop:Generator_ChildPropName="GetSitePagesDetailsRows" msprop:Generator_UserRelationName="Sites_SitePagesDetails" msprop:Generator_ParentPropName="SitesRow" msprop:Generator_RelationVarName="relationSites_SitePagesDetails" msprop:Generator_UserParentTable="Sites" />
+      <msdata:Relationship name="ResultFieldType_ResultFields" msdata:parent="ResultFieldType" msdata:child="ResultFields" msdata:parentkey="RFT_ID" msdata:childkey="RFT_ID" msprop:Generator_UserChildTable="ResultFields" msprop:Generator_ChildPropName="GetResultFieldsRows" msprop:Generator_UserRelationName="ResultFieldType_ResultFields" msprop:Generator_RelationVarName="relationResultFieldType_ResultFields" msprop:Generator_UserParentTable="ResultFieldType" msprop:Generator_ParentPropName="ResultFieldTypeRow" />
+      <msdata:Relationship name="ResultFields_Results" msdata:parent="ResultFields" msdata:child="Results" msdata:parentkey="ResultFieldID" msdata:childkey="ResultFieldID" msprop:Generator_UserChildTable="Results" msprop:Generator_ChildPropName="GetResultsRows" msprop:Generator_UserRelationName="ResultFields_Results" msprop:Generator_ParentPropName="ResultFieldsRow" msprop:Generator_RelationVarName="relationResultFields_Results" msprop:Generator_UserParentTable="ResultFields" />
+      <msdata:Relationship name="Searches_ResultSets" msdata:parent="Searches" msdata:child="ResultSets" msdata:parentkey="SearchID" msdata:childkey="SearchID" msprop:Generator_UserChildTable="ResultSets" msprop:Generator_ChildPropName="GetResultSetsRows" msprop:Generator_UserRelationName="Searches_ResultSets" msprop:Generator_ParentPropName="SearchesRow" msprop:Generator_RelationVarName="relationSearches_ResultSets" msprop:Generator_UserParentTable="Searches" />
+      <msdata:Relationship name="PagingType_SitePagesDetails" msdata:parent="PagingType" msdata:child="SitePagesDetails" msdata:parentkey="PagingTypeID" msdata:childkey="PagingTypeID" msprop:Generator_UserChildTable="SitePagesDetails" msprop:Generator_ChildPropName="GetSitePagesDetailsRows" msprop:Generator_UserRelationName="PagingType_SitePagesDetails" msprop:Generator_RelationVarName="relationPagingType_SitePagesDetails" msprop:Generator_UserParentTable="PagingType" msprop:Generator_ParentPropName="PagingTypeRow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
